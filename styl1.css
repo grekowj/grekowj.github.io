@@ -1,0 +1,252 @@
+body {
+    background-color: #ffffff;
+}
+h1 {
+    font-family: "Arial","Verdana"; 
+    font-size: 12pt;
+}
+h2 {
+    font-family: "Arial","Verdana"; 
+    font-size: 10pt;
+}
+h3 {
+    font-family: "Arial","Verdana"; 
+    font-size: 10pt;
+    font-style: italic;
+}
+p, li {
+    font-family: "Arial","Verdana";
+    font-size: 10pt;
+    color: #000000;
+}
+p.menu {
+    font-weight: bold;
+}
+p.stopka {
+    font-size: 7pt;
+    text-align: center;
+
+}
+
+p.msonormal-center {
+    color: #ffffff; 
+    font-family: "Arial","Verdana";
+    font-size: 10pt; 
+    line-height:10pt;
+    text-align: center;
+    font-weight: bold;
+}
+img.foto {
+    border:8px solid #ffffff; 
+    box-shadow:3px 6px 8px 1px;
+}
+img.logo {
+    width: 70px;
+    height: 70px;
+}
+img.cd {
+    width: 120px;
+    height: 108px;
+    /*box-shadow: 5px 5px 10px*/
+    /*border:8px solid #ffffff;*/ 
+    box-shadow:3px 6px 8px 1px;
+}
+img.figure {
+    width: 350px;
+    /*height: 240px;*/
+    /*box-shadow: 5px 5px 10px*/
+    /*border:8px solid #ffffff;*/ 
+    /*box-shadow:3px 6px 8px 1px;*/
+}
+img.figure2 {
+    width: 600px;
+    /*height: 240px;*/
+    /*box-shadow: 5px 5px 10px*/
+    /*border:8px solid #ffffff;*/ 
+    /*box-shadow:3px 6px 8px 1px;*/
+}
+img.book {
+    width: 130px;   
+    overflow: auto;
+    float: right;    
+    /*position: absolute;*/     
+    overflow: auto;
+    right: 10px;
+    padding: 10px;
+    /*height: 240px;*/
+    box-shadow: 5px 5px 10px
+        /*border:8px solid #ffffff;*/ 
+        /*box-shadow:3px 6px 8px 1px;*/
+}
+
+
+
+td {
+    font-family: "Arial","Verdana";
+    font-size: 10pt;
+}
+A:link { color: #008000 }
+A:visited { color: #008000 }
+
+
+table, th, td , tr {
+    border: 0px solid black;
+    border-width: 0px;
+    vertical-align:top;
+
+
+}
+table.cala-szer {
+    width: 100%;
+    padding: 0px;    
+    border: 0px ;
+}
+td.col-menu
+{
+    width: 18%;
+    vertical-align:top;
+    padding: 5px;
+}
+td.col-body
+{
+    width: 80%;
+    text-align: justify;
+    padding: 5px;
+}
+td.col-prawa {
+    width: 10%;
+}
+td.col-srodek {
+    width: 80%;
+}
+td.col-lewa {
+    vertical-align:top;
+    width: 10%;
+}
+td.col-prawa-nagl {
+    width: 10%;
+    background-color: #008000;
+    border:  0px solid black;
+}
+td.col-srodek-nagl {
+    width: 80%;
+    background-color: #008000;
+    border:  0px solid black;
+}
+td.col-lewa-nagl {
+    width: 10%;
+    background-color: #008000;
+    border: 0px solid black;
+}
+
+#outer_wrapper {  
+    overflow: scroll;  
+    /*width:100%;*/
+    width:2000px;
+}
+
+/*nawigator style STRAT*/
+body {
+    font-family: "Verdana", "Arial", sans-serif;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /*background-color: #111;*/
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 4px 8px 4px 32px;
+    text-decoration: none;
+    font-size: 15pt;
+    color: #008000  ;
+    display: block;
+    /*transition: 0.3s;*/
+}
+
+.sidebar a:hover {
+    color: #444;
+    /*color: #ff9900;*/
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: green;
+    padding: 10px 15px;    
+    border: none;
+}
+
+.openbtn:hover {
+    /*background-color: #444;*/
+    background-color: #999;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+/*dla ekranow wiekszych niz 600px*/
+@media screen and (min-width: 600px) {
+    #main {
+        display: none;
+    }
+    /*    #myOldMenu{
+            display: block;
+        }*/
+
+    .sidebar {
+        height: 100%;
+        width: 20%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        overflow-x: visible;
+        transition: 0s;
+        padding-top: 50px;
+    }
+    .sidebar a {
+        padding: 2px 8px 2px 32px;
+        text-decoration: none;
+        font-size: 10pt;
+        font-weight:bold ;
+        color: #008000  ;
+        display: block;
+        /*transition: 0.3s;*/
+    }
+    .sidebar .closebtn {
+        display: none;
+    }
+    .main {
+        margin-left: 20%; /* Same as the width of the sidebar */
+        padding: 0px 10px;
+    }
+}
+/*nawigator style END*/
