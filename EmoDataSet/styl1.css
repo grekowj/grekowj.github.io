@@ -1,0 +1,133 @@
+body {
+    background-color: #ffffff;
+}
+h1 {
+    font-family: "Arial","Verdana"; 
+    font-size: 12pt;
+}
+h2 {
+    font-family: "Arial","Verdana"; 
+    font-size: 10pt;
+}
+h3 {
+    font-family: "Arial","Verdana"; 
+    font-size: 10pt;
+    font-style: italic;
+}
+p, li {
+    font-family: "Arial","Verdana";
+    font-size: 10pt;
+    color: #000000;
+}
+p.menu {
+    font-weight: bold;
+}
+p.stopka {
+    font-size: 7pt;
+    text-align: center;
+
+}
+
+p.msonormal-center {
+    color: #ffffff; 
+    font-family: "Arial","Verdana";
+    font-size: 10pt; 
+    line-height:10pt;
+    text-align: center;
+    font-weight: bold;
+}
+img.foto {
+    border:8px solid #ffffff; 
+    box-shadow:3px 6px 8px 1px;
+}
+img.logo {
+    width: 70px;
+    height: 70px;
+}
+img.cd {
+    width: 120px;
+    height: 108px;
+    /*box-shadow: 5px 5px 10px*/
+    /*border:8px solid #ffffff;*/ 
+    box-shadow:3px 6px 8px 1px;
+}
+img.figure {
+    width: 350px;
+    /*height: 240px;*/
+    /*box-shadow: 5px 5px 10px*/
+    /*border:8px solid #ffffff;*/ 
+    /*box-shadow:3px 6px 8px 1px;*/
+}
+img.figure2 {
+    width: 600px;
+    /*height: 240px;*/
+    /*box-shadow: 5px 5px 10px*/
+    /*border:8px solid #ffffff;*/ 
+    /*box-shadow:3px 6px 8px 1px;*/
+}
+
+
+
+td {
+    font-family: "Arial","Verdana";
+    font-size: 10pt;
+}
+A:link { color: #008000 }
+A:visited { color: #008000 }
+
+
+table, th, td , tr {
+    border: 0px solid black;
+    border-width: 0px;
+    vertical-align:top;
+
+
+}
+table.cala-szer {
+    width: 100%;
+    padding: 0px;    
+    border: 0px ;
+}
+td.col-menu
+{
+    width: 18%;
+    vertical-align:top;
+    padding: 5px;
+}
+td.col-body
+{
+    width: 80%;
+    text-align: justify;
+    padding: 5px;
+}
+td.col-prawa {
+    width: 10%;
+}
+td.col-srodek {
+    width: 80%;
+}
+td.col-lewa {
+    vertical-align:top;
+    width: 10%;
+}
+td.col-prawa-nagl {
+    width: 10%;
+    background-color: #008000;
+    border:  0px solid black;
+}
+td.col-srodek-nagl {
+    width: 80%;
+    background-color: #008000;
+    border:  0px solid black;
+}
+td.col-lewa-nagl {
+    width: 10%;
+    background-color: #008000;
+    border: 0px solid black;
+}
+
+#outer_wrapper {  
+    overflow: scroll;  
+    /*width:100%;*/
+    width:2000px;
+}
