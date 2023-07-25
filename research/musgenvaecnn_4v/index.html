@@ -96,13 +96,17 @@
                                         <button class="openbtn" onclick="openNav()">☰</button>  
                                     </div>
                                     <p class="menu"> </p>
-                                    <p></p>
-                                    <h1>Grekow J. - Generating polyphonic symbolic emotional music in the style of Bach using convolutional CVAE</h1>
 
+                                    <h1>Grekow J. - Generating polyphonic symbolic emotional music in the style of Bach using convolutional CVAE</h1>
+                                    <p>ABSTRACT. In times of increasing human-machine interaction, the implementation of emotional intelligence in machines should not only recognize and track emotions during human interaction, but also respond with appropriate emotional content. Machines should be able to react and respond to human emotions. 
+Music generation with a specific emotion is part of this task. This article presents the process of building a system generating polyphonic music content of a specified emotion using a conditional variational autoencoder and convolutional layers. 
+The process of preparing a database of training examples with compositions by Johann Sebastian Bach, selecting and conducting transformations of musical examples was described. 
+Annotation with emotion labels was done by music experts with a university music education. The four emotion labels - happy, angry, sad, relaxed - corresponding to the four quadrants of Russell's model were used. The process of coding symbolic music examples into a time-pitch matrix representation, but also the structure of the built variational autoencoder, was described. Experiments on the implementation of different convolutional layers intended for visual analysis of the representation of music examples were presented. The generated emotional music files were evaluated using metrics and expert opinions.
+                                    </p>
 
 
                                     <ul>
-                                        <li><a HREF="https://github.com/grekowj/musgenvaecnn_4v" target="_blank">Training dataset, code, generated exaples</a></li>
+                                        <li><a HREF="https://github.com/grekowj/musgenvaecnn_4v" target="_blank">Training dataset, code, generated examples</a></li>
                                         <!--<li><a HREF="./generated_exaples">Generated exaples </a></li>-->                              
 
                                     </ul>
@@ -141,216 +145,216 @@
                                 </td>
                             </tr>
                             <tr>
-                                            <td>
-                                                Example_2   
-                                            </td>
-                                            <td>
-                                                e1   
-                                            </td>
-                                            <td>
-                                                Q1 / high-high 
-                                            </td>
-                                            <td>
-                                        <midi-player  src="./examples/e1/new_generated_15.mid"
-                                                      sound-font visualizer="#myVisualizer_2">
-                                        </midi-player>
-                                        <midi-visualizer type="piano-roll" id="myVisualizer_2"></midi-visualizer>
+                                <td>
+                                    Example_2   
                                 </td>
-                            </tr>
-                            <tr>
-                                            <td>
-                                                Example_3   
-                                            </td>
-                                            <td>
-                                                e1   
-                                            </td>
-                                            <td>
-                                                Q1 / high-high 
-                                            </td>
-                                            <td>
-                                        <midi-player  src="./examples/e1/new_generated_9.mid"
-                                                      sound-font visualizer="#myVisualizer_3">
-                                        </midi-player>
-                                        <midi-visualizer type="piano-roll" id="myVisualizer_3"></midi-visualizer>
+                                <td>
+                                    e1   
                                 </td>
-                            </tr>
-                            <tr>
-                                            <td>
-                                                Example_4   
-                                            </td>
-                                            <td>
-                                                e2   
-                                            </td>
-                                            <td>
-                                                Q2 / high-low 
-                                            </td>
-                                            <td>
-                                        <midi-player  src="./examples/e2/new_generated_3.mid"
-                                                      sound-font visualizer="#myVisualizer_4">
-                                        </midi-player>
-                                        <midi-visualizer type="piano-roll" id="myVisualizer_4"></midi-visualizer>
+                                <td>
+                                    Q1 / high-high 
                                 </td>
-                            </tr>
-                            <tr>
-                                            <td>
-                                                Example_5   
-                                            </td>
-                                            <td>
-                                                e2   
-                                            </td>
-                                            <td>
-                                                Q2 / high-low 
-                                            </td>
-                                            <td>
-                                        <midi-player  src="./examples/e2/new_generated_4.mid"
-                                                      sound-font visualizer="#myVisualizer_5">
-                                        </midi-player>
-                                        <midi-visualizer type="piano-roll" id="myVisualizer_5"></midi-visualizer>
-                                </td>
-                            </tr>
-                            <tr>
-                                            <td>
-                                                Example_6   
-                                            </td>
-                                            <td>
-                                                e2   
-                                            </td>
-                                            <td>
-                                                Q2 / high-low 
-                                            </td>
-                                            <td>
-                                        <midi-player  src="./examples/e2/new_generated_8.mid"
-                                                      sound-font visualizer="#myVisualizer_6">
-                                        </midi-player>
-                                        <midi-visualizer type="piano-roll" id="myVisualizer_6"></midi-visualizer>
-                                </td>
-                            </tr>
-                            <tr>
-                                            <td>
-                                                Example_7   
-                                            </td>
-                                            <td>
-                                                e3   
-                                            </td>
-                                            <td>
-                                                Q3 / low-low 
-                                            </td>
-                                            <td>
-                                        <midi-player  src="./examples/e3/new_generated_3.mid"
-                                                      sound-font visualizer="#myVisualizer_7">
-                                        </midi-player>
-                                        <midi-visualizer type="piano-roll" id="myVisualizer_7"></midi-visualizer>
-                                </td>
-                            </tr>
-                             <tr>
-                                            <td>
-                                                Example_8   
-                                            </td>
-                                            <td>
-                                                e3   
-                                            </td>
-                                            <td>
-                                                Q3 / low-low 
-                                            </td>
-                                            <td>
-                                        <midi-player  src="./examples/e3/new_generated_9.mid"
-                                                      sound-font visualizer="#myVisualizer_8">
-                                        </midi-player>
-                                        <midi-visualizer type="piano-roll" id="myVisualizer_8"></midi-visualizer>
-                                </td>
-                            </tr>
-                             <tr>
-                                            <td>
-                                                Example_9   
-                                            </td>
-                                            <td>
-                                                e3   
-                                            </td>
-                                            <td>
-                                                Q3 / low-low 
-                                            </td>
-                                            <td>
-                                        <midi-player  src="./examples/e3/new_generated_18.mid"
-                                                      sound-font visualizer="#myVisualizer_9">
-                                        </midi-player>
-                                        <midi-visualizer type="piano-roll" id="myVisualizer_9"></midi-visualizer>
-                                </td>
-                            </tr>
-                            <tr>
-                                            <td>
-                                                Example_10   
-                                            </td>
-                                            <td>
-                                                e4   
-                                            </td>
-                                            <td>
-                                                Q4 / low-high 
-                                            </td>
-                                            <td>
-                                        <midi-player  src="./examples/e4/new_generated_5.mid"
-                                                      sound-font visualizer="#myVisualizer_10">
-                                        </midi-player>
-                                        <midi-visualizer type="piano-roll" id="myVisualizer_10"></midi-visualizer>
-                                </td>
-                            </tr>
-                            <tr>
-                                            <td>
-                                                Example_11   
-                                            </td>
-                                            <td>
-                                                e4   
-                                            </td>
-                                            <td>
-                                                Q4 / low-high 
-                                            </td>
-                                            <td>
-                                        <midi-player  src="./examples/e4/new_generated_8.mid"
-                                                      sound-font visualizer="#myVisualizer_11">
-                                        </midi-player>
-                                        <midi-visualizer type="piano-roll" id="myVisualizer_11"></midi-visualizer>
-                                </td>
-                            </tr>
-                            <tr>
-                                            <td>
-                                                Example_12   
-                                            </td>
-                                            <td>
-                                                e4   
-                                            </td>
-                                            <td>
-                                                Q4 / low-high 
-                                            </td>
-                                            <td>
-                                        <midi-player  src="./examples/e4/new_generated_9.mid"
-                                                      sound-font visualizer="#myVisualizer_12">
-                                        </midi-player>
-                                        <midi-visualizer type="piano-roll" id="myVisualizer_12"></midi-visualizer>
-                                </td>
-                            </tr>
-
-                        </table>
-
-                        <!--<img class="figure" SRC="./Pictures/P1-AV-Rub-Sok.png" alt="Aplication" width="100">--> 
-
-
+                                <td>
+                            <midi-player  src="./examples/e1/new_generated_15.mid"
+                                          sound-font visualizer="#myVisualizer_2">
+                            </midi-player>
+                            <midi-visualizer type="piano-roll" id="myVisualizer_2"></midi-visualizer>
                     </td>
-
+                </tr>
+                <tr>
+                    <td>
+                        Example_3   
+                    </td>
+                    <td>
+                        e1   
+                    </td>
+                    <td>
+                        Q1 / high-high 
+                    </td>
+                    <td>
+                <midi-player  src="./examples/e1/new_generated_9.mid"
+                              sound-font visualizer="#myVisualizer_3">
+                </midi-player>
+                <midi-visualizer type="piano-roll" id="myVisualizer_3"></midi-visualizer>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        Example_4   
+                    </td>
+                    <td>
+                        e2   
+                    </td>
+                    <td>
+                        Q2 / high-low 
+                    </td>
+                    <td>
+                <midi-player  src="./examples/e2/new_generated_3.mid"
+                              sound-font visualizer="#myVisualizer_4">
+                </midi-player>
+                <midi-visualizer type="piano-roll" id="myVisualizer_4"></midi-visualizer>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        Example_5   
+                    </td>
+                    <td>
+                        e2   
+                    </td>
+                    <td>
+                        Q2 / high-low 
+                    </td>
+                    <td>
+                <midi-player  src="./examples/e2/new_generated_4.mid"
+                              sound-font visualizer="#myVisualizer_5">
+                </midi-player>
+                <midi-visualizer type="piano-roll" id="myVisualizer_5"></midi-visualizer>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        Example_6   
+                    </td>
+                    <td>
+                        e2   
+                    </td>
+                    <td>
+                        Q2 / high-low 
+                    </td>
+                    <td>
+                <midi-player  src="./examples/e2/new_generated_8.mid"
+                              sound-font visualizer="#myVisualizer_6">
+                </midi-player>
+                <midi-visualizer type="piano-roll" id="myVisualizer_6"></midi-visualizer>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        Example_7   
+                    </td>
+                    <td>
+                        e3   
+                    </td>
+                    <td>
+                        Q3 / low-low 
+                    </td>
+                    <td>
+                <midi-player  src="./examples/e3/new_generated_3.mid"
+                              sound-font visualizer="#myVisualizer_7">
+                </midi-player>
+                <midi-visualizer type="piano-roll" id="myVisualizer_7"></midi-visualizer>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        Example_8   
+                    </td>
+                    <td>
+                        e3   
+                    </td>
+                    <td>
+                        Q3 / low-low 
+                    </td>
+                    <td>
+                <midi-player  src="./examples/e3/new_generated_9.mid"
+                              sound-font visualizer="#myVisualizer_8">
+                </midi-player>
+                <midi-visualizer type="piano-roll" id="myVisualizer_8"></midi-visualizer>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        Example_9   
+                    </td>
+                    <td>
+                        e3   
+                    </td>
+                    <td>
+                        Q3 / low-low 
+                    </td>
+                    <td>
+                <midi-player  src="./examples/e3/new_generated_18.mid"
+                              sound-font visualizer="#myVisualizer_9">
+                </midi-player>
+                <midi-visualizer type="piano-roll" id="myVisualizer_9"></midi-visualizer>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        Example_10   
+                    </td>
+                    <td>
+                        e4   
+                    </td>
+                    <td>
+                        Q4 / low-high 
+                    </td>
+                    <td>
+                <midi-player  src="./examples/e4/new_generated_5.mid"
+                              sound-font visualizer="#myVisualizer_10">
+                </midi-player>
+                <midi-visualizer type="piano-roll" id="myVisualizer_10"></midi-visualizer>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        Example_11   
+                    </td>
+                    <td>
+                        e4   
+                    </td>
+                    <td>
+                        Q4 / low-high 
+                    </td>
+                    <td>
+                <midi-player  src="./examples/e4/new_generated_8.mid"
+                              sound-font visualizer="#myVisualizer_11">
+                </midi-player>
+                <midi-visualizer type="piano-roll" id="myVisualizer_11"></midi-visualizer>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        Example_12   
+                    </td>
+                    <td>
+                        e4   
+                    </td>
+                    <td>
+                        Q4 / low-high 
+                    </td>
+                    <td>
+                <midi-player  src="./examples/e4/new_generated_9.mid"
+                              sound-font visualizer="#myVisualizer_12">
+                </midi-player>
+                <midi-visualizer type="piano-roll" id="myVisualizer_12"></midi-visualizer>
+                </td>
                 </tr>
 
             </table>
 
-            <p class="stopka">Copyright &copy; 2001-
-                <script language="javascript" type="text/javascript"> var today = new Date();
-                    var year = today.getFullYear();
-                    document.write(year);</script>
-                Home Page of Jacek Grekow</p>
-        </td>
+            <!--<img class="figure" SRC="./Pictures/P1-AV-Rub-Sok.png" alt="Aplication" width="100">--> 
 
-        <td class="col-prawa">
 
         </td>
 
     </tr>
+
+</table>
+
+<p class="stopka">Copyright &copy; 2001-
+    <script language="javascript" type="text/javascript"> var today = new Date();
+        var year = today.getFullYear();
+        document.write(year);</script>
+    Home Page of Jacek Grekow</p>
+</td>
+
+<td class="col-prawa">
+
+</td>
+
+</tr>
 
 
 
