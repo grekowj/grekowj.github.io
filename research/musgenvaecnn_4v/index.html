@@ -6,7 +6,7 @@
 
         <meta NAME="KEYWORDS" CONTENT="Jacek Grekow, Generating Polyphonic Symbolic Emotional Music ">
         <meta name="description" content="Generating Polyphonic Symbolic Emotional Music in the Style of Bach Using Convolutional Conditional Variational Autoencoder
- VAE">
+              VAE">
         <meta name="robots" content="index, follow">
         <link href="../../styl1.css" rel="stylesheet" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,6 +21,10 @@
                 document.getElementById("main").style.marginLeft = "0";
             }
         </script>
+
+        <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
+
+
 
     </head>
     <body>
@@ -45,16 +49,16 @@
             </div>
             <table class="cala-szer">
                 <tr>
-<!--                    <td class="col-lewa">
-
-                        <p class="msonormal-center">
-                            <a href="http://pb.edu.pl/" target="blanc">  <img class="logo" SRC="../logo/LogoPB.jpg" alt="Logo PB" > </a>
-                        </p>
-                        <p class="msonormal-center">
-                            <a href="http://wi.pb.edu.pl/" target="blanc">  <img class="logo" SRC="../logo/wi.png" alt="Logo WI PB" > </a>
-                        </p>
-
-                    </td>             -->
+                    <!--                    <td class="col-lewa">
+                    
+                                            <p class="msonormal-center">
+                                                <a href="http://pb.edu.pl/" target="blanc">  <img class="logo" SRC="../logo/LogoPB.jpg" alt="Logo PB" > </a>
+                                            </p>
+                                            <p class="msonormal-center">
+                                                <a href="http://wi.pb.edu.pl/" target="blanc">  <img class="logo" SRC="../logo/wi.png" alt="Logo WI PB" > </a>
+                                            </p>
+                    
+                                        </td>             -->
 
                     <td class="col-srodek">
                         <table class="cala-szer">
@@ -77,67 +81,92 @@
                         <table class="cala-szer">
 
                             <tr VALIGN=TOP>
-<!--                                <td class="col-lewa">
-                                    <p class="menu"><a HREF="../../index.html">Home</a></p>
-                                    <p class="menu"><a HREF="../../jgTeaching.html">Teaching</a></p>
-                                    <p class="menu"><a HREF="../../jgResearch.html">Research</a></p>
-                                    <p class="menu"><a HREF="../../jgCV.html">CV</a></p>
-                                    <p class="menu"><a HREF="../../jgLinks.html">Related Links</a></p>
-                                    <p class="menu"><a HREF="../../jgMusic.html">Music</a></p>
-                                    <p class="menu"><a HREF="../../jgPraceDypl.html">Students</a></p>
-
-                                </td>-->
+                                <!--                                <td class="col-lewa">
+                                                                    <p class="menu"><a HREF="../../index.html">Home</a></p>
+                                                                    <p class="menu"><a HREF="../../jgTeaching.html">Teaching</a></p>
+                                                                    <p class="menu"><a HREF="../../jgResearch.html">Research</a></p>
+                                                                    <p class="menu"><a HREF="../../jgCV.html">CV</a></p>
+                                                                    <p class="menu"><a HREF="../../jgLinks.html">Related Links</a></p>
+                                                                    <p class="menu"><a HREF="../../jgMusic.html">Music</a></p>
+                                                                    <p class="menu"><a HREF="../../jgPraceDypl.html">Students</a></p>
+                                
+                                                                </td>-->
                                 <td class="col-srodek">
                                     <div id="main">
                                         <button class="openbtn" onclick="openNav()">☰</button>  
                                     </div>
-                                    <p class="menu">Generating Polyphonic Symbolic Emotional Music in the Style of Bach Using Convolutional Conditional Variational Autoencoder
- VAE </p>
-                                    <p>
+                                    <p class="menu"> </p>
+                                    <p></p>
+                                    <h1>Generating polyphonic symbolic emotional music in the style of Bach using convolutional CVAE</h1>
 
 
-                                    </p>
+
                                     <ul>
-                                        <li><a HREF="./dataset">Dataset</a></li>
-                                        <li><a HREF="./generated_exaples">Generated exaples </a></li>                                     
-
+                                        <li><a HREF="https://github.com/grekowj/musgenvaecnn_4v">Training dataset, code, generated exaples</a></li>
+                                        <!--<li><a HREF="./generated_exaples">Generated exaples </a></li>-->                              
 
                                     </ul>
                                     <h2>Generated music examples labeled with four emotions</h2>
+                                     <midi-player
+                                            src="./examples/e1/new_generated_0.mid"
+                                            sound-font visualizer="#myVisualizer">
+                                        </midi-player>
+                                        <midi-visualizer type="piano-roll" id="myVisualizer"></midi-visualizer>
+                                    <table class="cala-szer">
+                                        <tr>
+                                            <td>
+                                                Emotion
+                                            </td>
+                                            <td>
+                                                MIDI
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                e1
+                                            </td>
+                                            <td>
+                                       
 
-                                    <!--<img class="figure" SRC="./Pictures/P1-AV-Rub-Sok.png" alt="Aplication" width="100">--> 
-                                    
 
                                 </td>
-
                             </tr>
 
                         </table>
 
-                        <p class="stopka">Copyright &copy; 2001-
-                            <script language="javascript" type="text/javascript"> var today = new Date();
-                                var year = today.getFullYear();
-                                document.write(year);</script>
-                            Home Page of Jacek Grekow</p>
-                    </td>
+                        <!--<img class="figure" SRC="./Pictures/P1-AV-Rub-Sok.png" alt="Aplication" width="100">--> 
 
-                    <td class="col-prawa">
 
                     </td>
 
                 </tr>
 
-
-
-
             </table>
 
-            <p><br><br>
-            </p>
+            <p class="stopka">Copyright &copy; 2001-
+                <script language="javascript" type="text/javascript"> var today = new Date();
+                    var year = today.getFullYear();
+                    document.write(year);</script>
+                Home Page of Jacek Grekow</p>
+        </td>
+
+        <td class="col-prawa">
+
+        </td>
+
+    </tr>
 
 
-        </div>
-    </body>
+
+
+</table>
+
+<p><br><br>
+</p>
+
+
+</div>
+</body>
 </html>
 
 
