@@ -4,8 +4,8 @@
         <meta HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
         <title>Comparative Analysis of Musical Performances </title>
 
-        <meta NAME="KEYWORDS" CONTENT="Jacek Grekow, Comparative Analysis of Musical Performances ">
-        <meta name="description" content="Comparative Analysis of Musical Performances by Using Emotion Tracking in the Arousal-Valence Plane">
+        <meta NAME="KEYWORDS" CONTENT="Jacek Grekow, Monophonic Music Generation ">
+        <meta name="description" content="Monophonic Music Generation With a Given Emotion Using Conditional Variational Autoencoder">
         <meta name="robots" content="index, follow">
         <link href="../../styl1.css" rel="stylesheet" type="text/css"/>
 
@@ -21,6 +21,8 @@
                 document.getElementById("main").style.marginLeft = "0";
             }
         </script>
+        <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
+
 
     </head>
     <body>
@@ -92,8 +94,8 @@
                                         <button class="openbtn" onclick="openNav()">☰</button>  
                                     </div>
                                     <p class="menu"> </p>
-                                     <h1>J. Grekow and T. Dimitrova-Grekow, Monophonic Music Generation With a Given Emotion Using Conditional Variational Autoencoder, IEEE Access, vol. 9, pp. 129088-129101, (2021)</h1>
-                                   
+                                    <h1>J. Grekow and T. Dimitrova-Grekow, Monophonic Music Generation With a Given Emotion Using Conditional Variational Autoencoder, IEEE Access, vol. 9, pp. 129088-129101, (2021)</h1>
+
                                     <p> ABSTRACT. 
                                         The rapid increase in the importance of human-machine interaction and the accelerating pace of life pose various challenges for the creators of digital environments. Continuous improvement of human-machine interaction requires precise modeling of the physical and emotional state of people. By implementing emotional intelligence in machines, robots are expected not only to recognize and track emotions when interacting with humans, but also to respond and behave appropriately. The machine should match its reaction to the mood of the user as precisely as possible. Music generation with a given emotion can be a good start to fulfilling such a requirement.
                                         This article presents the process of building a system generating music content of a specified emotion. As the emotion labels, four basic emotions: happy, angry, sad, relaxed, corresponding to the four quarters of Russell’s model, were used. Conditional variational autoencoder using a recurrent neural network for sequence processing was used as a generative model. The obtained results in the form of the generated music examples with a specific emotion are convincing in their structure and sound. The generated examples were evaluated with two methods, in the first using metrics for comparison with the training set and in the second using expert annotation.
@@ -108,39 +110,260 @@
 
                                     </ul>
 
-                                    <!--<img class="figure" SRC="./Pictures/P1-AV-Rub-Sok.png" alt="Aplication" width="100">--> 
-
-
+                                    <table class="cala-szer">
+                                        <tr>
+                                            <td>
+                                                <b>Example</b>
+                                            </td>
+                                            <td>
+                                                <b>Emotion</b>
+                                            </td>
+                                            <td>
+                                                <b>Quarter in Russell's model /  Arousal-Valence</b>
+                                            </td>
+                                            <td>
+                                                <b>MIDI</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Example_1   
+                                            </td>
+                                            <td>
+                                                e1   
+                                            </td>
+                                            <td>
+                                                Q1 / high-high 
+                                            </td>
+                                            <td>
+                                        <midi-player  src="./examples/e1/new_generated_0.mid"
+                                                      sound-font visualizer="#myVisualizer_1">
+                                        </midi-player>
+                                        <midi-visualizer type="piano-roll" id="myVisualizer_1"></midi-visualizer>
                                 </td>
-
                             </tr>
-
-                        </table>
-
-                        <p class="stopka">Copyright &copy; 2001-
-                            <script language="javascript" type="text/javascript"> var today = new Date();
-                                var year = today.getFullYear();
-                                document.write(year);</script>
-                            Home Page of Jacek Grekow</p>
+                            <tr>
+                                <td>
+                                    Example_2   
+                                </td>
+                                <td>
+                                    e1   
+                                </td>
+                                <td>
+                                    Q1 / high-high 
+                                </td>
+                                <td>
+                            <midi-player  src="./examples/e1/new_generated_2.mid"
+                                          sound-font visualizer="#myVisualizer_2">
+                            </midi-player>
+                            <midi-visualizer type="piano-roll" id="myVisualizer_2"></midi-visualizer>
                     </td>
-
-                    <td class="col-prawa">
-
-                    </td>
-
                 </tr>
-
-
-
-
+                <tr>
+                    <td>
+                        Example_3   
+                    </td>
+                    <td>
+                        e1   
+                    </td>
+                    <td>
+                        Q1 / high-high 
+                    </td>
+                    <td>
+                <midi-player  src="./examples/e1/new_generated_4.mid"
+                              sound-font visualizer="#myVisualizer_3">
+                </midi-player>
+                <midi-visualizer type="piano-roll" id="myVisualizer_3"></midi-visualizer>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        Example_4   
+                    </td>
+                    <td>
+                        e2   
+                    </td>
+                    <td>
+                        Q2 / high-low 
+                    </td>
+                    <td>
+                <midi-player  src="./examples/e2/new_generated_0.mid"
+                              sound-font visualizer="#myVisualizer_4">
+                </midi-player>
+                <midi-visualizer type="piano-roll" id="myVisualizer_4"></midi-visualizer>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        Example_5   
+                    </td>
+                    <td>
+                        e2   
+                    </td>
+                    <td>
+                        Q2 / high-low 
+                    </td>
+                    <td>
+                <midi-player  src="./examples/e2/new_generated_1.mid"
+                              sound-font visualizer="#myVisualizer_5">
+                </midi-player>
+                <midi-visualizer type="piano-roll" id="myVisualizer_5"></midi-visualizer>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        Example_6   
+                    </td>
+                    <td>
+                        e2   
+                    </td>
+                    <td>
+                        Q2 / high-low 
+                    </td>
+                    <td>
+                <midi-player  src="./examples/e2/new_generated_11.mid"
+                              sound-font visualizer="#myVisualizer_6">
+                </midi-player>
+                <midi-visualizer type="piano-roll" id="myVisualizer_6"></midi-visualizer>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        Example_7   
+                    </td>
+                    <td>
+                        e3   
+                    </td>
+                    <td>
+                        Q3 / low-low 
+                    </td>
+                    <td>
+                <midi-player  src="./examples/e3/new_generated_1.mid"
+                              sound-font visualizer="#myVisualizer_7">
+                </midi-player>
+                <midi-visualizer type="piano-roll" id="myVisualizer_7"></midi-visualizer>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        Example_8   
+                    </td>
+                    <td>
+                        e3   
+                    </td>
+                    <td>
+                        Q3 / low-low 
+                    </td>
+                    <td>
+                <midi-player  src="./examples/e3/new_generated_8.mid"
+                              sound-font visualizer="#myVisualizer_8">
+                </midi-player>
+                <midi-visualizer type="piano-roll" id="myVisualizer_8"></midi-visualizer>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        Example_9   
+                    </td>
+                    <td>
+                        e3   
+                    </td>
+                    <td>
+                        Q3 / low-low 
+                    </td>
+                    <td>
+                <midi-player  src="./examples/e3/new_generated_11.mid"
+                              sound-font visualizer="#myVisualizer_9">
+                </midi-player>
+                <midi-visualizer type="piano-roll" id="myVisualizer_9"></midi-visualizer>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        Example_10   
+                    </td>
+                    <td>
+                        e4   
+                    </td>
+                    <td>
+                        Q4 / low-high 
+                    </td>
+                    <td>
+                <midi-player  src="./examples/e4/new_generated_3.mid"
+                              sound-font visualizer="#myVisualizer_10">
+                </midi-player>
+                <midi-visualizer type="piano-roll" id="myVisualizer_10"></midi-visualizer>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        Example_11   
+                    </td>
+                    <td>
+                        e4   
+                    </td>
+                    <td>
+                        Q4 / low-high 
+                    </td>
+                    <td>
+                <midi-player  src="./examples/e4/new_generated_4.mid"
+                              sound-font visualizer="#myVisualizer_11">
+                </midi-player>
+                <midi-visualizer type="piano-roll" id="myVisualizer_11"></midi-visualizer>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        Example_12   
+                    </td>
+                    <td>
+                        e4   
+                    </td>
+                    <td>
+                        Q4 / low-high 
+                    </td>
+                    <td>
+                <midi-player  src="./examples/e4/new_generated_8.mid"
+                              sound-font visualizer="#myVisualizer_12">
+                </midi-player>
+                <midi-visualizer type="piano-roll" id="myVisualizer_12"></midi-visualizer>
+                </td>
+                </tr>
             </table>
 
-            <p><br><br>
-            </p>
+            <!--<img class="figure" SRC="./Pictures/P1-AV-Rub-Sok.png" alt="Aplication" width="100">--> 
 
 
-        </div>
-    </body>
+        </td>
+
+    </tr>
+
+</table>
+
+<p class="stopka">Copyright &copy; 2001-
+    <script language="javascript" type="text/javascript"> var today = new Date();
+        var year = today.getFullYear();
+        document.write(year);</script>
+    Home Page of Jacek Grekow</p>
+</td>
+
+<td class="col-prawa">
+
+</td>
+
+</tr>
+
+
+
+
+</table>
+
+<p><br><br>
+</p>
+
+
+</div>
+</body>
 </html>
 
 
