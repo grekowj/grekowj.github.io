@@ -2,11 +2,10 @@
 <html>
     <head>
         <meta HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
-        <title>Generating Polyphonic Symbolic Emotional Music </title>
+        <title>Emotional Regularization of the Latent Space of a VAE</title>
 
-        <meta NAME="KEYWORDS" CONTENT="Jacek Grekow, Generating Polyphonic Symbolic Emotional Music ">
-        <meta name="description" content="Generating Polyphonic Symbolic Emotional Music in the Style of Bach Using Convolutional Conditional Variational Autoencoder
-              VAE">
+        <meta NAME="KEYWORDS" CONTENT="Jacek Grekow, Emotional Regularization of the Latent Space of a VAE ">
+        <meta name="description" content="Emotional Regularization of the Latent Space of a VAE">
         <meta name="robots" content="index, follow">
         <link href="../../styl1.css" rel="stylesheet" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -97,21 +96,27 @@
                                     </div>
                                     <p class="menu"> </p>
 
-                                    <h1>Grekow J. - Generating polyphonic symbolic emotional music in the style of Bach using convolutional CVAE</h1>
-                                    <p>ABSTRACT. In times of increasing human-machine interaction, the implementation of emotional intelligence in machines should not only recognize and track emotions during human interaction, but also respond with appropriate emotional content. Machines should be able to react and respond to human emotions. 
-                                        Music generation with a specific emotion is part of this task. This article presents the process of building a system generating polyphonic music content of a specified emotion using a conditional variational autoencoder and convolutional layers. 
-                                        The process of preparing a database of training examples with compositions by Johann Sebastian Bach, selecting and conducting transformations of musical examples was described. 
-                                        Annotation with emotion labels was done by music experts with a university music education. The four emotion labels - happy, angry, sad, relaxed - corresponding to the four quadrants of Russell's model were used. The process of coding symbolic music examples into a time-pitch matrix representation, but also the structure of the built variational autoencoder, was described. Experiments on the implementation of different convolutional layers intended for visual analysis of the representation of music examples were presented. The generated emotional music files were evaluated using metrics and expert opinions.
-                                    </p>
+                                    <h1>Grekow J. - Emotional Regularization of the Latent Space of a Variational Autoencoder for Generating Musical Sequences</h1>
+                                    <p>The article presents a new regularization of the latent space of a variational autoencoder in order to connect it with the emotion of generated
+                                        music examples. A two-dimensional Russell model was used as the emotion model, with its 4 quadrants corresponding to basic emotions such as
+                                        happiness, anger, sadness, and relaxation. Variational autoencoder models employing recurrent neural networks were constructed and trained on a
+                                        dataset of monophonic music sequences labeled with emotions. </p>
+                                    <hr>
 
+                                    <img class="figure" SRC="./latent_space_0700_v05.png" NAME="ls1" > 
+                                    <h2>Latent space of the CVAE-EmoReg model</h2> 
+                                    <hr>
+
+                                    <!--<img class="figure" SRC="./latent_space_0700_noEmoReg_v05.png" NAME="ls2" >--> 
 
                                     <ul>
-                                        <li><a HREF="https://github.com/grekowj/musgenvaecnn_4v" target="_blank">Training dataset, code, generated examples</a></li>
+                                        <li><a HREF="https://github.com/grekowj/musgenvaecnn_4v" target="_blank">
+                                                Training dataset, code, generated examples  _ do poprawy</a></li>
                                         <!--<li><a HREF="./generated_exaples">Generated exaples </a></li>-->                              
 
                                     </ul>
-                                    <h2>Generated music examples labeled with four emotions using - CVAE-Mus2 model</h2>
-
+                                    <h2>Generated music examples labeled with four emotions using - CVAE-EmoReg model</h2>
+                                    <hr>
                                     <table class="cala-szer">
                                         <tr>
                                             <td>
@@ -127,6 +132,7 @@
                                                 <b>MIDI</b>
                                             </td>
                                         </tr>
+
                                         <tr>
                                             <td>
                                                 Example_1   
@@ -161,6 +167,7 @@
                             <midi-visualizer type="piano-roll" id="myVisualizer_2"></midi-visualizer>
                     </td>
                 </tr>
+
                 <tr>
                     <td>
                         Example_3   
@@ -189,10 +196,13 @@
                         Q2 / high-low 
                     </td>
                     <td>
+
                 <midi-player  src="./examples/e2/new_generated_3.mid"
                               sound-font visualizer="#myVisualizer_4">
+
                 </midi-player>
                 <midi-visualizer type="piano-roll" id="myVisualizer_4"></midi-visualizer>
+
                 </td>
                 </tr>
                 <tr>
@@ -342,6 +352,7 @@
     </tr>
 
 </table>
+                        <hr>
 
 <p class="stopka">Copyright &copy; 2001-
     <script language="javascript" type="text/javascript"> var today = new Date();
