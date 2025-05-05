@@ -37,8 +37,9 @@ p.msonormal-center {
     font-weight: bold;
 }
 img.foto {
-    border:8px solid #ffffff; 
-    box-shadow:3px 6px 8px 1px;
+    width: 200px;
+/*    border:8px solid #ffffff; 
+    box-shadow:3px 6px 8px 1px;*/
 }
 img.logo {
     width: 70px;
