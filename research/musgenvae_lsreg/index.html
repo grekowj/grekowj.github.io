@@ -97,17 +97,12 @@
                                     <p class="menu"> </p>
 
                                     <h1>Grekow J. - Emotional Regularization of the Latent Space of a Variational Autoencoder for Generating Musical Sequences</h1>
-                                    <p>The article presents a new regularization of the latent space of a variational autoencoder in order to connect it with the emotion of generated
-                                        music examples. A two-dimensional Russell model was used as the emotion model, with its 4 quadrants corresponding to basic emotions such as
-                                        happiness, anger, sadness, and relaxation. Variational autoencoder models employing recurrent neural networks were constructed and trained on a
-                                        dataset of monophonic music sequences labeled with emotions. </p>
+                                    <p>This article presents a new regularization of the latent space of a variational autoencoder that will facilitate the visual selection of specific emotions of generated monophonic musical sequences. 
+                                        This regularization allocates the regions of a two-dimensional space according to the quadrants of an emotion model. 
+                                        The cosine similarity between the vectors in the latent space and the feature vectors of the training examples was used to calculate the loss, which extends the standard loss of the variational autoencoder. 
+                                        By mapping the emotion model to a latent space, this space will become more interpretable when generating new examples of music. A two-dimensional Russell model was used as the emotion model, with its four quadrants corresponding to basic emotions, such as happy, angry, sad, and relaxed. 
+                                        Variational autoencoder models employing recurrent neural networks were constructed and trained on a dataset of monophonic music sequences labeled with emotions. The obtained latent space and generated music files with different emotions were evaluated. </p>
                                     <hr>
-
-                                    <img class="figure" SRC="./latent_space_0700_v05.png" NAME="ls1" > 
-                                    <h2>Latent space of the CVAE-EmoReg model</h2> 
-                                    <hr>
-
-                                    <!--<img class="figure" SRC="./latent_space_0700_noEmoReg_v05.png" NAME="ls2" >--> 
 
                                     <ul>
                                         <li><a HREF="https://github.com/grekowj/musgenvaecnn_4v" target="_blank">
@@ -115,8 +110,30 @@
                                         <!--<li><a HREF="./generated_exaples">Generated exaples </a></li>-->                              
 
                                     </ul>
-                                    <h2>Generated music examples labeled with four emotions using - CVAE-EmoReg model</h2>
-                                    <hr>
+
+                                    <table class="cala-szer">
+                                        <tr>
+                                            <td>
+                                                <img class="figure" SRC="./latent_space_0700_noEmoReg_v05.png" NAME="ls1" > 
+                                                <h2>Figure 1. Latent space of the baseline model CVAE-Base - without regularization </h2>
+                                            </td>
+                                            <td>
+                                                <img class="figure" SRC="./latent_space_0700_v05.png" NAME="ls1" > 
+                                                <h2>Figure 2. Latent space of the CVAE-EmoReg model - after regularization</h2>                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <hr/>
+
+                                    <img class="figure" SRC="./generated-emo-examples.png" NAME="ls1" > 
+                                    <h2> Figure 3. Examples of generated musical sequences with given emotions (a) e1, (b) e2, (c) e3, and (d) e4
+                                    </h2> 
+
+                                    <hr/>
+
+                                    <h2>Table 1. Generated music examples labeled with four emotions using - CVAE-EmoReg model</h2>
+                                    
                                     <table class="cala-szer">
                                         <tr>
                                             <td>
@@ -144,101 +161,35 @@
                                                 Q1 / high-high 
                                             </td>
                                             <td>
-                                        <midi-player  src="./examples/e1/new_generated_0.mid"
+                                                <p>
+                                        <midi-player  src="./examples/e1/new_generated_10.mid"
                                                       sound-font visualizer="#myVisualizer_1">
                                         </midi-player>
                                         <midi-visualizer type="piano-roll" id="myVisualizer_1"></midi-visualizer>
+                                        </p>
                                 </td>
                             </tr>
+
                             <tr>
+
                                 <td>
-                                    Example_2   
+                                    Example_4   
                                 </td>
                                 <td>
-                                    e1   
+                                    e2   
                                 </td>
                                 <td>
-                                    Q1 / high-high 
+                                    Q2 / high-low 
                                 </td>
                                 <td>
-                            <midi-player  src="./examples/e1/new_generated_15.mid"
-                                          sound-font visualizer="#myVisualizer_2">
+
+                            <midi-player  src="./examples/e2/new_generated_0.mid" sound-font visualizer="#myVisualizer_4">
                             </midi-player>
-                            <midi-visualizer type="piano-roll" id="myVisualizer_2"></midi-visualizer>
+                            <midi-visualizer type="piano-roll" id="myVisualizer_4"></midi-visualizer>
+
                     </td>
                 </tr>
 
-                <tr>
-                    <td>
-                        Example_3   
-                    </td>
-                    <td>
-                        e1   
-                    </td>
-                    <td>
-                        Q1 / high-high 
-                    </td>
-                    <td>
-                <midi-player  src="./examples/e1/new_generated_9.mid"
-                              sound-font visualizer="#myVisualizer_3">
-                </midi-player>
-                <midi-visualizer type="piano-roll" id="myVisualizer_3"></midi-visualizer>
-                </td>
-                </tr>
-                <tr>
-                    <td>
-                        Example_4   
-                    </td>
-                    <td>
-                        e2   
-                    </td>
-                    <td>
-                        Q2 / high-low 
-                    </td>
-                    <td>
-
-                <midi-player  src="./examples/e2/new_generated_3.mid"
-                              sound-font visualizer="#myVisualizer_4">
-
-                </midi-player>
-                <midi-visualizer type="piano-roll" id="myVisualizer_4"></midi-visualizer>
-
-                </td>
-                </tr>
-                <tr>
-                    <td>
-                        Example_5   
-                    </td>
-                    <td>
-                        e2   
-                    </td>
-                    <td>
-                        Q2 / high-low 
-                    </td>
-                    <td>
-                <midi-player  src="./examples/e2/new_generated_4.mid"
-                              sound-font visualizer="#myVisualizer_5">
-                </midi-player>
-                <midi-visualizer type="piano-roll" id="myVisualizer_5"></midi-visualizer>
-                </td>
-                </tr>
-                <tr>
-                    <td>
-                        Example_6   
-                    </td>
-                    <td>
-                        e2   
-                    </td>
-                    <td>
-                        Q2 / high-low 
-                    </td>
-                    <td>
-                <midi-player  src="./examples/e2/new_generated_8.mid"
-                              sound-font visualizer="#myVisualizer_6">
-                </midi-player>
-                <midi-visualizer type="piano-roll" id="myVisualizer_6"></midi-visualizer>
-                </td>
-                </tr>
                 <tr>
                     <td>
                         Example_7   
@@ -250,46 +201,13 @@
                         Q3 / low-low 
                     </td>
                     <td>
-                <midi-player  src="./examples/e3/new_generated_3.mid"
+                <midi-player  src="./examples/e3/new_generated_1.mid"
                               sound-font visualizer="#myVisualizer_7">
                 </midi-player>
                 <midi-visualizer type="piano-roll" id="myVisualizer_7"></midi-visualizer>
                 </td>
                 </tr>
-                <tr>
-                    <td>
-                        Example_8   
-                    </td>
-                    <td>
-                        e3   
-                    </td>
-                    <td>
-                        Q3 / low-low 
-                    </td>
-                    <td>
-                <midi-player  src="./examples/e3/new_generated_9.mid"
-                              sound-font visualizer="#myVisualizer_8">
-                </midi-player>
-                <midi-visualizer type="piano-roll" id="myVisualizer_8"></midi-visualizer>
-                </td>
-                </tr>
-                <tr>
-                    <td>
-                        Example_9   
-                    </td>
-                    <td>
-                        e3   
-                    </td>
-                    <td>
-                        Q3 / low-low 
-                    </td>
-                    <td>
-                <midi-player  src="./examples/e3/new_generated_18.mid"
-                              sound-font visualizer="#myVisualizer_9">
-                </midi-player>
-                <midi-visualizer type="piano-roll" id="myVisualizer_9"></midi-visualizer>
-                </td>
-                </tr>
+
                 <tr>
                     <td>
                         Example_10   
@@ -301,46 +219,13 @@
                         Q4 / low-high 
                     </td>
                     <td>
-                <midi-player  src="./examples/e4/new_generated_5.mid"
+                <midi-player  src="./examples/e4/new_generated_3.mid"
                               sound-font visualizer="#myVisualizer_10">
                 </midi-player>
                 <midi-visualizer type="piano-roll" id="myVisualizer_10"></midi-visualizer>
                 </td>
                 </tr>
-                <tr>
-                    <td>
-                        Example_11   
-                    </td>
-                    <td>
-                        e4   
-                    </td>
-                    <td>
-                        Q4 / low-high 
-                    </td>
-                    <td>
-                <midi-player  src="./examples/e4/new_generated_17.mid"
-                              sound-font visualizer="#myVisualizer_11">
-                </midi-player>
-                <midi-visualizer type="piano-roll" id="myVisualizer_11"></midi-visualizer>
-                </td>
-                </tr>
-                <tr>
-                    <td>
-                        Example_12   
-                    </td>
-                    <td>
-                        e4   
-                    </td>
-                    <td>
-                        Q4 / low-high 
-                    </td>
-                    <td>
-                <midi-player  src="./examples/e4/new_generated_9.mid"
-                              sound-font visualizer="#myVisualizer_12">
-                </midi-player>
-                <midi-visualizer type="piano-roll" id="myVisualizer_12"></midi-visualizer>
-                </td>
-                </tr>
+
 
             </table>
 
@@ -352,7 +237,7 @@
     </tr>
 
 </table>
-                        <hr>
+<hr>
 
 <p class="stopka">Copyright &copy; 2001-
     <script language="javascript" type="text/javascript"> var today = new Date();
